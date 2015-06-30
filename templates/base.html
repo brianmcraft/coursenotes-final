@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- create page header and navigation -->
+<html>
+	<head>
+		<title>Intro to Programming Work Sessions</title>
+		<link href = '/styles/style.css' rel = 'stylesheet'>
+	</head>
+	<body>
+		<div class="title">
+			<h1>Intro to Programming Work Sessions</h1>
+			<p><span class="italic" id="plainlink"> An <a href="https://s3.amazonaws.com/content.udacity-data.com/courses/nd000/Student-FacingIPNDTimelineFeb2015.pdf?mkt_tok=3RkMMJWWfF9wsRokuKXIZKXonjHpfsX56uQkXqG%2FlMI%2F0ER3fOvrPUfGjI4DT8ViI%2BSLDwEYGJlv6SgFTLHGMbdlwLgJWBg%3D">ongoing</a> experiential primer in web dev (with <a href="https://docs.google.com/document/d/1SVGYLNm_dx2fc5QU0xRVvVi_9KMXQW7Kb67_vsaph8Y/pub?embedded=true">Office Hours</a>).</span></p>
+		</div>
+		<div class="tab-nav">
+			<ul>
+				<li><a href="#stage-1">Stage 1</a></li>
+				<li><a href="#stage-2">Stage 2</a></li>
+				<li><a href="#stage-3">Stage 3</a></li>
+				<li><a href="#stage-4">Stage 4</a></li>
+				<li><a href="#stage-5">Stage 5</a></li>
+			</ul>
+		</div>
+		
+		<!-- leverage template substitution -->
+		{% block content %}
+		{% endblock %}
+
+		{% block comments %}
+		{% endblock %}
+
+		<!-- create page footer -->
+		<div class="worksession">
+			<p><span class="italic">&copy; Brian Craft 2015</span></p>
+		</div>
+	</body>
+</html>

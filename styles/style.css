@@ -1,0 +1,194 @@
+@import
+url('http://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+	color: #545151;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/*navigation*/
+/*Still working on this...*/
+.tab-nav {
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+.tab-nav ul {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.tab-nav li {
+	display: inline;
+}
+
+.tab-nav a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	width: 100px;
+}
+
+
+/*user content*/
+.user-content, .user-identification {
+	background-color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	color: #545151;
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 4px;
+}
+
+.user-content {
+	width: 95%;
+}
+
+.user-identification {
+	width: 45%;
+}
+
+.label {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+	background: #2196F3;
+	border: 0px solid #F8F8F8;
+	border-radius: 2px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px;
+	padding: 4px;
+	width: 100px;
+}
+
+input[type=submit]:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*primary content*/
+.title {
+	color: #FFFFFF;
+	background-color: #2196F3;
+	padding: 40px 40px 40px 20px;
+}
+
+.stage {
+	color: #545151;
+	background-color: #BBDEFB;
+	padding: 10px 10px 10px 20px;
+}
+
+.worksession {
+	color: #545151;
+	background-color: #E0E0E0;
+	margin-top: 10px;
+	padding: 10px 10px 10px 20px;
+}
+
+.card {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+
+.card-title {
+	background-color: #787878;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #FFFFFF;
+	padding: 5px 5px 5px 20px;
+}
+
+.card-content {
+	background-color: #F8F8F8;
+	color: #545151;
+	display: flex;
+	padding: 20px;
+}
+
+.image-center-responsive {
+	display: block;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+/*Responsive video embed idea from
+https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php*/
+.video-center-embed {
+	height: 0;
+	padding-top: 25px;
+	padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+}
+
+.video-center-embed iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.code {
+	background-color: #eee;
+	font-family: 'Consolas', 'monospace', serif;
+	padding: 2px;
+}
+
+.table {
+	width: 100%;
+}
+
+.table td {
+	padding: 5px;
+}
+
+.table th {
+	background-color: #2196F3;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+.table tr:nth-child(even) {
+	background-color: #E3F2FD;
+}
+
+.table tr:nth-child(odd) {
+	background-color: #BBDEFB;
+}
+
+#plainlink a:link,
+#plainlink a:visited,
+#plainlink a:hover,
+#plainlink a:active {
+	color: #FFFFFF;
+}

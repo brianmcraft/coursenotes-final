@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- when cards exist in the Datastore,
+	show them using variable substitution! -->
+{% if cards %}
+	{% for card in cards %}
+	<div class="card">
+	<div class="card-title">
+		<h3>{{card.title}}</h3>
+	</div>
+		<div class="card-content">
+			<div class="content">
+				<div class="content-topic">
+					{{card.content | safe}}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+{% endif %}
+
+<!-- data entry form for posting comments -->
+<form action="/" method="post">
+	<div class="title" id="comments">
+		<h1>Post a Comment</h1>
+		<p><span class="italic" id="plainlink">{{greeting | safe}} Ask a question, suggest an improvement, or share a thought.</span></p>
+	</div>
+	<div class="label">Comment</div>
+	<div>
+		<textarea class="user-content" name="content" rows="3" placeholder="What you talkin' 'bout, Willis?"></textarea>
+	</div>
+	<div class="label">Name</div>
+	<div>		
+		<input class="user-identification" name="name" placeholder="Willis" type="text">
+	</div>
+	<div class="label">Email</div>
+	<div>
+		<input class="user-identification" name="email" placeholder="you@internets.com" type="text">
+	</div>
+	<div>
+		<input type="submit" name="submit" value="Post">
+	</div>
+</form>
+
+{% endblock %}
+
+
+{% block comments %}
+<!-- when comments exist in the Datastore,
+	show them using variable substitution! -->
+{% if comments %}
+	{% for comment in comments %}
+	<div class="card">
+	<div class="card-title">
+		<h3>{{comment.author.name}} on {{comment.date}}</h3>
+	</div>
+		<div class="card-content">
+			<div class="content">
+				<div class="content-topic">
+					{{comment.content}}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+{% endif %}
+
+{% endblock %}
